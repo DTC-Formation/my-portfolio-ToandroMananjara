@@ -1,6 +1,9 @@
 *{
     list-style: none;
 }
+i{
+    color:rgb(68, 68, 138);
+}
 .user img{
     width: 200px;
     height: 200px;
