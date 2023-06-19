@@ -177,8 +177,23 @@ i:hover{
     color: #011936;
 }
 /* bloc competence */
+.skills-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
 .skills{
     padding-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.icon-skills img{
+    width: 200px;
+    height: 200px;
 }
 
 /* bloc education */
@@ -201,8 +216,8 @@ i:hover{
 }
 .education .education1{
     border: solid 2px #F6F4F3;
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     margin: 20px;
     padding:0 10px;
     text-align: center;
@@ -329,6 +344,11 @@ footer{
         width: fit-content;
         margin: auto;
         justify-content: center;
+        margin-top: 50px;
+    }
+    .user-1 img{
+        width: 100px;
+        height: 200px;
     }
     .about-me .bio{
         width: 90%;
@@ -338,7 +358,12 @@ footer{
     .bio .download{
         text-align: center;
     }
-
+    .education1{
+        width: 200px;
+        height: 200px;
+        font-size: 20px;
+        padding: 5px;
+    }
     .form-group input,textarea{
         width:50%;
         height: 50px;
