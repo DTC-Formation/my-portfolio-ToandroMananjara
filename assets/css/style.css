@@ -228,8 +228,6 @@ i:hover{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-top: 50px;
-    height: 100vh;
 }
 
 .form-group{
@@ -298,7 +296,7 @@ footer{
         width: 100%;
     }
     .form-group input,textarea{
-        width:30%;
+        width:60%;
         height: 50px;
         margin: 10px;
         border: solid 1px #5d535c;
@@ -321,7 +319,7 @@ footer{
         width: 100%;
     }
     .form-group input,textarea{
-        width:30%;
+        width:60%;
         height: 50px;
         margin: 10px;
         border: solid 1px #5d535c;
