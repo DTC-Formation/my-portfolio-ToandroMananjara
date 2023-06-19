@@ -119,12 +119,15 @@ header .user{
 .bloc-left .title h3{
     color: #d9af23;
     font-size: 40px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 .bloc-left .title #btn{
     padding: 10px 40px; 
     background: #d9af23;
     color: #141414; 
     border-radius: 20px;
+    
 }
 .bloc-left .title #btn:hover{
     background: #F6F4F3;
@@ -137,13 +140,13 @@ i:hover{
 .bloc-left .title ul{
     display: flex;
     justify-content:space-evenly; 
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 .about-me .user-1 img{
-    width: auto;
+    width: 300px;
     height: 300px;
-    border-radius: 20px;
+    border-radius: 50%;
 }
 
 /* div about_me */
@@ -235,7 +238,7 @@ i:hover{
 }
 
 .form-group input,textarea{
-    width:30%;
+    width:20%;
     height: 50px;
     margin: 10px;
     border: solid 1px #5d535c;
@@ -296,7 +299,7 @@ footer{
         width: 100%;
     }
     .form-group input,textarea{
-        width:60%;
+        width:50%;
         height: 50px;
         margin: 10px;
         border: solid 1px #5d535c;
