@@ -40,7 +40,7 @@ header{
     display: flex;
     position: sticky;
     background-color: #011936;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 header a{
