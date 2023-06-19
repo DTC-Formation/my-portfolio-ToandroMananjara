@@ -6,11 +6,21 @@
 *{
     list-style: none;
     text-decoration: none;
+    font-size: 20px;
 }
 body{
     margin: 0;
     color: #F6F4F3;
 }
+
+ h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #d9af23;
+
+}
+
 /* tous les icons sont en couleur blanc et de taille 30px*/
 i{
     color: #F6F4F3;
@@ -23,11 +33,12 @@ ul{
 }
 /*css header  */
 header{
+    width: 100%;
     top: 0px;
     height: 50px;
     display: flex;
     position: sticky;
-    background-color: #141414;
+    background-color: #011936;
     color: #F6F4F3;
 }
 
@@ -132,7 +143,7 @@ i:hover{
      padding-left:200px; */
 }
 .about-me .user-1 img{
-    width: 100%;
+    width: auto;
     height: 300px;
     border-radius: 20px;
 }
@@ -148,16 +159,22 @@ i:hover{
 }
 .about-me .bio{
     width: 50%;
+    /* background: #011936;
+    opacity: 0.5; */
 }
-.about-me .bio .texte{
+.about-me .bio div .texte{
     margin-bottom:30px ;
 }
 .about-me .bio a{
     margin-top: 50px;
     padding: 10px 30px;
     background: #d9af23;
-    color: #141414;
+    color: #011936;
     border-radius: 20px;
+}
+.about-me .bio a:hover{
+    background: #F6F4F3;
+    color: #011936;
 }
 /* bloc competence */
 .skills{
@@ -179,9 +196,6 @@ i:hover{
     align-items: center;
 }
 
-.education h1{
-    text-align: center;
-}
 .left,.right{
     margin:0 20px;
 }
@@ -226,8 +240,129 @@ padding: 0 10px;
     height: 80px;
     padding: 20px 10px;
 }
-.form-group .send{
-    width: 10%;
-    position: relative;
-    
+form{
+    width: 100%;
 }
+.form-group .send{
+    background: #d9af23;
+    padding: 10px 40px;
+    border-radius: 20px;
+    color: #011936;   
+}
+.form-group .send:hover{
+    background: #F6F4F3;
+    color: #011936;
+}
+footer{
+    width: 100%;
+    height: 70px;
+    /* padding: 20px 0; */
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+footer{
+    background: #F6F4F3;
+    color: #011936;
+     opacity: 0.5;
+}
+.footer ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer ul li i {
+    padding:0 10px;
+    color:#011936;
+}
+@media(min-width:930px){
+    .form-group{
+        width: 100%;
+    }
+    .form-group input,textarea{
+    width:30%;
+    height: 50px;
+    margin: 10px;
+    border: solid 1px #5d535c;
+    border-radius: 20px;
+    padding: 0 10px;
+    /* box-shadow: 0 0 2em #141414; */
+    }    
+}
+/* media query */
+@media( max-width :930px){
+    .navbar{
+        position: absolute;
+        top:-100px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    
+    .form-group{
+        width: 100%;
+    }
+    .form-group input,textarea{
+    width:30%;
+    height: 50px;
+    margin: 10px;
+    border: solid 1px #5d535c;
+    border-radius: 20px;
+    padding: 0 10px;
+    /* box-shadow: 0 0 2em #141414; */
+    }.send{
+    width: 100%;
+} 
+
+}
+@media(max-width: 540px){
+    .about-me{
+        padding:0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .user-1{
+        width: fit-content;
+        margin: auto;
+        justify-content: center;
+    }
+    .about-me .bio{
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
+    .bio .download{
+        text-align: center;
+    }
+    .education1{
+
+    }
+    .contact{
+
+    }
+    .form-group input,textarea{
+        width:50%;
+        height: 50px;
+    }       
+    .send{
+        width: 100%;
+    } 
+    footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 150px;
+        justify-content: left;
+    }
+     .footer ul li{
+        padding-left: 0;
+        text-align: right;
+    } 
+
+    }
+    
