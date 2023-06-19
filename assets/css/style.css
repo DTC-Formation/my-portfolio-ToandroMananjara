@@ -6,11 +6,13 @@ body{
     margin: 0;
     color: #183059;
 }
+/* tous les icons sont en couleur blanc et de taille 30px*/
 i{
     color: #F6F4F3;
-    margin-right: 10px;
     font-size: 30px;
 }
+
+/* enlever tous les padding de ul */
 ul{
     padding: 0;
 }
@@ -23,25 +25,28 @@ header{
     background-color: #183059;
     color: #F6F4F3;
 }
+
 header a{
     color: #F6F4F3;
 }
 header .user{
     display: flex;
 }
+
 .user img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin-right: 20px;
 }
+/* navbar :acceuil ,a propos,competence, education,contact positionné à droite  */
 .navbar{
     position: absolute;
     right: 10px;
 }
+/* mettre les navbar cote à cote */
 .navbar ul{
     display: flex;
-    
 }
 .navbar ul li{
     margin-right: 50px;
@@ -51,6 +56,7 @@ header .user{
 .container{
    /* background: #0091AD;  */
 }
+/* page d'acceuil */
 .home-page{
     display: flex;
     justify-content: start;
@@ -73,6 +79,7 @@ header .user{
    align-items: center;
 
 }
+
 .bloc-left{
     width: 50%;
     margin-left: 100px;
@@ -101,6 +108,7 @@ header .user{
 i:hover{
     color: #F03A47;
 }
+/* manipulation des icons reseaux sociaux */
 .bloc-left .title ul{
     display: flex;
     justify-content:space-evenly; 
