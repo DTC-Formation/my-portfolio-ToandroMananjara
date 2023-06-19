@@ -256,7 +256,6 @@ form{
 footer{
     width: 100%;
     height: 70px;
-    /* padding: 20px 0; */
     font-weight: bold;
     padding-top: 15px;
 }
@@ -305,16 +304,16 @@ footer{
         width: 100%;
     }
     .form-group input,textarea{
-    width:30%;
-    height: 50px;
-    margin: 10px;
-    border: solid 1px #5d535c;
-    border-radius: 20px;
-    padding: 0 10px;
-    /* box-shadow: 0 0 2em #141414; */
-    }.send{
-    width: 100%;
-} 
+        width:30%;
+        height: 50px;
+        margin: 10px;
+        border: solid 1px #5d535c;
+        border-radius: 20px;
+        padding: 0 10px;
+    }
+    .send{
+        width: 100%;
+    } 
 
 }
 @media(max-width: 540px){
@@ -339,12 +338,7 @@ footer{
     .bio .download{
         text-align: center;
     }
-    .education1{
 
-    }
-    .contact{
-
-    }
     .form-group input,textarea{
         width:50%;
         height: 50px;
