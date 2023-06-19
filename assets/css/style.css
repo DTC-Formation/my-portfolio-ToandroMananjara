@@ -34,12 +34,13 @@ ul{
 /*css header  */
 header{
     width: 100%;
-    top: 0px;
     height: 50px;
+    color: #F6F4F3;
+    top: 0px;
     display: flex;
     position: sticky;
     background-color: #011936;
-    color: #F6F4F3;
+    opacity: 0.5;
 }
 
 header a{
@@ -47,6 +48,8 @@ header a{
 }
 header .user{
     display: flex;
+    margin-left: 20px;
+    align-items: center;
 }
 
 .user img{
@@ -75,9 +78,7 @@ header .user{
 }
 
 /* css div container */
-.container{
-   /* background: #0091AD;  */
-}
+
 /* page d'acceuil */
 .home-page{
     display: flex;
@@ -94,7 +95,7 @@ header .user{
         width: 100%;
         height: 100%;
         object-fit: cover;
-        z-index: -5;
+        z-index: -1;
     }
 .home-page .home-container{
    width: 100%;
@@ -138,10 +139,7 @@ i:hover{
     justify-content:space-evenly; 
     margin-top: 50px;
 }
-.about-me .user-1{
-    /* width: 50%;
-     padding-left:200px; */
-}
+
 .about-me .user-1 img{
     width: auto;
     height: 300px;
@@ -151,7 +149,6 @@ i:hover{
 /* div about_me */
 .about-me{
     display: flex;   
-    /* background:#5d535c; */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-evenly;
@@ -159,8 +156,6 @@ i:hover{
 }
 .about-me .bio{
     width: 50%;
-    /* background: #011936;
-    opacity: 0.5; */
 }
 .about-me .bio div .texte{
     margin-bottom:30px ;
@@ -206,7 +201,6 @@ i:hover{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    overflow: hidden;
     justify-content: center;
     align-items: center;
 }
@@ -228,8 +222,6 @@ i:hover{
     color: #d9af23;
 }
 
-
-
 /* section Contact */
 .contact{
     display: flex;
@@ -239,35 +231,41 @@ i:hover{
     padding-top: 50px;
     height: 100vh;
 }
+
 .form-group{
     width: 100%;
 }
+
 .form-group input,textarea{
-width:30%;
-height: 50px;
-margin: 10px;
-border: solid 1px #5d535c;
-border-radius: 20px;
-padding: 0 10px;
-/* box-shadow: 0 0 2em #141414; */
+    width:30%;
+    height: 50px;
+    margin: 10px;
+    border: solid 1px #5d535c;
+    border-radius: 20px;
+    padding: 0 10px;
 }
+
 .form-group textarea{
     height: 80px;
     padding: 20px 10px;
+
 }
 form{
     width: 100%;
 }
+
 .form-group .send{
     background: #d9af23;
     padding: 10px 40px;
     border-radius: 20px;
     color: #011936;   
 }
+
 .form-group .send:hover{
     background: #F6F4F3;
     color: #011936;
 }
+
 footer{
     width: 100%;
     height: 70px;
@@ -278,8 +276,9 @@ footer{
 footer{
     background: #F6F4F3;
     color: #011936;
-     opacity: 0.5;
+    opacity: 0.5;
 }
+
 .footer ul{
     display: flex;
     flex-direction: row;
@@ -287,25 +286,27 @@ footer{
     justify-content: space-evenly;
     align-items: center;
 }
+
 .footer ul li i {
     padding:0 10px;
     color:#011936;
 }
+
 @media(min-width:930px){
     .form-group{
         width: 100%;
     }
     .form-group input,textarea{
-    width:30%;
-    height: 50px;
-    margin: 10px;
-    border: solid 1px #5d535c;
-    border-radius: 20px;
-    padding: 0 10px;
-    /* box-shadow: 0 0 2em #141414; */
+        width:30%;
+        height: 50px;
+        margin: 10px;
+        border: solid 1px #5d535c;
+        border-radius: 20px;
+        padding: 0 10px;
+
     }    
 }
-/* media query */
+/* media query : responsivité*/
 @media( max-width :930px){
     .navbar{
         position: absolute;
@@ -378,10 +379,9 @@ footer{
         height: 150px;
         justify-content: left;
     }
-     .footer ul li{
-        padding-left: 0;
+     .footer ul {
         text-align: right;
     } 
 
-    }
+}
     
