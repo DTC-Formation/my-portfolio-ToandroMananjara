@@ -380,9 +380,13 @@ footer{
         flex-wrap: nowrap;
         height: 150px;
         justify-content: left;
+        align-items: start;
     }
-     .footer ul li{
-     
+     .footer ul{
+        display: flex;
+        justify-content: start;
+        margin: 0 10px;
+        
     } 
 
 }
