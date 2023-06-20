@@ -375,18 +375,17 @@ footer{
         width: 100%;
     } 
     footer{
+        height: 140px;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        height: 150px;
-        justify-content: left;
-        align-items: start;
+        padding: 0 10px;
+        
     }
      .footer ul{
         display: flex;
         justify-content: start;
-        margin: 0 10px;
-        
+        align-items: center;
     } 
 
 }
