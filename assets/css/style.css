@@ -312,7 +312,8 @@ footer{
 @media( max-width :930px){
     .navbar{
         position: absolute;
-        top:-100px;
+        /* top:-100px; */
+        visibility: hidden;
     }
     h1{
         font-size: 30px;
