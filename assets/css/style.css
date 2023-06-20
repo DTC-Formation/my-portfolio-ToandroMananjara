@@ -381,8 +381,8 @@ footer{
         height: 150px;
         justify-content: left;
     }
-     .footer ul {
-        text-align: right;
+     .footer ul li{
+     
     } 
 
 }
