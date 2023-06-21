@@ -1,8 +1,4 @@
-/* 
-    #141414 
-    #5d535c
-    #d9af23
-*/
+
 @font-face {
     font-family: astonpoliz;
     src: url(../fonts/Astonpoliz/Astonpoliz.otf),url(../fonts/Astonpoliz/Astonpoliz.ttf);
@@ -11,27 +7,27 @@
 *{
     list-style: none;
     text-decoration: none;
+    font-family: astonpoliz;
     font-size: 20px;
     box-sizing: border-box;
-    font-family: astonpoliz;
 }
 body{
     margin: 0;
     color: #F6F4F3;
 }
 
- h1{
-    text-align: center;
+h1{
     font-size: 50px;
     font-weight: bold;
     color: #d9af23;
+    text-align: center;
 
 }
 
 /* tous les icons sont en couleur blanc et de taille 30px*/
 i{
-    color: #F6F4F3;
     font-size: 30px;
+    color: #F6F4F3;
 }
 
 /* enlever tous les padding de ul */
@@ -43,7 +39,6 @@ header{
     width: 100%;
     height: 50px;
     color: #F6F4F3;
-    top: 0px;
     display: flex;
     position: sticky;
     background-color: #011936;
@@ -55,52 +50,54 @@ header a{
 }
 header .user{
     display: flex;
-    margin-left: 20px;
     align-items: center;
+    margin-left: 20px;
 }
 
 .user img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-right: 20px;
 }
 /* navbar :acceuil ,a propos,competence, education,contact positionné à droite  */
 .navbar{
     position: absolute;
     right: 10px;
+    padding: 15px 0; 
 }
 /* mettre les navbar cote à cote */
 .navbar ul{
     display: flex;
+    align-items: center;
+    margin: auto;
 }
 .navbar ul li{
     margin-right: 50px;
 }
 .navbar a:hover{
-    padding: 10px;
-    border-radius: 20px;
-    background: #F6F4F3;
     color: #183059;
+    background: #d9af23;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 /* css div container */
 
 /* page d'acceuil */
 .home-page{
+    width: 100%;
+    height: 100vh;  
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 100%;
-    height: 100vh;  
     margin-bottom:-50px;
 }
 .bg-video{
+        width: 100%;
+        height: 100%;
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
         object-fit: cover;
         z-index: -1;
     }
@@ -130,15 +127,15 @@ header .user{
     margin-bottom: 70px;
 }
 .bloc-left .title #btn{
-    padding: 10px 40px; 
-    background: #d9af23;
     color: #141414; 
+    background: #d9af23;
     border-radius: 20px;
+    padding: 10px 40px; 
     
 }
 .bloc-left .title #btn:hover{
-    background: #F6F4F3;
     color: #141414;
+    background: #F6F4F3;
 }
 i:hover{
     color: #d9af23;
@@ -174,15 +171,15 @@ i:hover{
     margin-bottom:30px ;
 }
 .about-me .bio a{
+    color: #011936;
+    background: #d9af23;
+    border-radius: 20px;
     margin-top: 50px;
     padding: 10px 30px;
-    background: #d9af23;
-    color: #011936;
-    border-radius: 20px;
 }
 .about-me .bio a:hover{
-    background: #F6F4F3;
     color: #011936;
+    background: #F6F4F3;
 }
 /* bloc competence */
 .skills-container {
@@ -192,12 +189,12 @@ i:hover{
     padding: 0;
 }
 .skills{
-    padding-top: 50px;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-top: 50px;
 }
 .icon-skills img{
     width: 200px;
@@ -210,12 +207,12 @@ i:hover{
     padding-top: 50px;
 }
 .education-container {
-    padding:0 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding:0 50px;
 }
 
 .left,.right{
@@ -223,23 +220,21 @@ i:hover{
     margin:0 30px;
 }
 .left,.right{
-    justify-content: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .education .education1{
-    border: solid 2px #F6F4F3;
     width: 320px;
     height: 320px;
-    width: 300px;
-    height: 300px;
+    font-size: 30px;
+    text-align: center;
+    border: solid 2px #F6F4F3;
+    box-shadow: 0 0 0.5em #F6F4F3;
     margin: 20px;
     padding:0 10px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 0 0 0.5em #F6F4F3;
 }
 .education1 h4{
     color: #d9af23;
@@ -265,7 +260,12 @@ i:hover{
     border-radius: 20px;
     padding: 0 10px;
 }
-
+input:focus{
+    outline:2px solid #d9af23;
+}
+ textarea:focus{
+    outline: 2px solid #d9af23;
+}
 .form-group textarea{
     height: 80px;
     padding: 20px 10px;
@@ -276,20 +276,19 @@ form{
 }
 
 .form-group .send{
-    background: #d9af23;
-    padding: 10px 40px;
-    border-radius: 20px;
     color: #011936;   
+    background: #d9af23;
+    border-radius: 20px;
+    padding: 10px 40px;
 }
 
 .form-group .send:hover{
-    background: #F6F4F3;
     color: #011936;
+    background: #F6F4F3;
 }
 
 footer{
     width: 100%;
-    height: 70px;
     height: 100px;
     font-weight: bold;
     padding-top: 15px;
@@ -311,8 +310,8 @@ footer{
 }
 
 .footer ul li i {
-    padding:0 10px;
     color:#011936;
+    padding:0 10px;
 }
 
 @media(min-width:930px){
@@ -322,9 +321,9 @@ footer{
     .form-group input,textarea{
         width:50%;
         height: 50px;
-        margin: 10px;
         border: solid 1px #5d535c;
         border-radius: 20px;
+        margin: 10px;
         padding: 0 10px;
 
     }    
@@ -332,9 +331,6 @@ footer{
 /* media query : responsivité*/
 @media( max-width :930px){
     .navbar{
-        position: absolute;
-        top:-100px;
-        /* top:-100px; */
         visibility: hidden;
     }
     h1{
@@ -347,10 +343,10 @@ footer{
     .form-group input,textarea{
         width:60%;
         height: 50px;
-        margin: 10px;
         border: solid 1px #5d535c;
         border-radius: 20px;
         padding: 0 10px;
+        margin: 10px;
     }
     .send{
         width: 100%;
@@ -359,17 +355,17 @@ footer{
 }
 @media(max-width: 540px){
     .about-me{
-        padding:0;
         width: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+        padding:0;
     }
     .user-1{
         width: fit-content;
-        margin: auto;
         justify-content: center;
+        margin: auto;
         margin-top: 50px;
     }
     .user-1 img{
@@ -378,8 +374,8 @@ footer{
     }
     .about-me .bio{
         width: 90%;
-        margin: auto;
         justify-content: center;
+        margin: auto;
     }
     .bio .download{
         text-align: center;
@@ -418,13 +414,9 @@ footer{
         height: 100%;
     }
     .education .education1{
-        border: solid 2px #F6F4F3;
         width: 280px;
         height: 280px;
-        margin: 20px;
         padding:0 px;
-        text-align: center;
-        font-size: 30px;
-        box-shadow: 0 0 0.5em #F6F4F3;
+        margin: 20px;
     }
    }
