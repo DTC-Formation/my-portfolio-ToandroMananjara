@@ -3,27 +3,37 @@
     #5d535c
     #d9af23
 */
+@font-face {
+    font-family: astonpoliz;
+    src: url(../fonts/Astonpoliz/Astonpoliz.otf),url(../fonts/Astonpoliz/Astonpoliz.ttf);
+
+}
 *{
     list-style: none;
     text-decoration: none;
     font-size: 20px;
     box-sizing: border-box;
+    font-family: astonpoliz;
 }
 body{
     margin: 0;
     color: #F6F4F3;
 }
+
  h1{
     text-align: center;
     font-size: 50px;
     font-weight: bold;
     color: #d9af23;
+
 }
+
 /* tous les icons sont en couleur blanc et de taille 30px*/
 i{
     color: #F6F4F3;
     font-size: 30px;
 }
+
 /* enlever tous les padding de ul */
 ul{
     padding: 0;
@@ -39,6 +49,7 @@ header{
     background-color: #011936;
     opacity: 0.8;
 }
+
 header a{
     color: #F6F4F3;
 }
@@ -47,6 +58,7 @@ header .user{
     margin-left: 20px;
     align-items: center;
 }
+
 .user img{
     width: 50px;
     height: 50px;
@@ -71,7 +83,9 @@ header .user{
     background: #F6F4F3;
     color: #183059;
 }
+
 /* css div container */
+
 /* page d'acceuil */
 .home-page{
     display: flex;
@@ -95,7 +109,9 @@ header .user{
    display: flex;
    justify-content: center;
    align-items: center;
+
 }
+
 .bloc-left{
     width: fit-content;
     text-align: center;
@@ -133,11 +149,13 @@ i:hover{
     justify-content:space-evenly; 
     margin-top: 150px;
 }
+
 .about-me .user-1 img{
     width: 300px;
     height: 300px;
     border-radius: 50%;
 }
+
 /* div about_me */
 .about-me{
     display: flex;   
@@ -185,6 +203,7 @@ i:hover{
     width: 200px;
     height: 200px;
 }
+
 /* bloc education */
 .education{
     width: 100%;
@@ -198,7 +217,9 @@ i:hover{
     justify-content: center;
     align-items: center;
 }
+
 .left,.right{
+    margin:0 20px;
     margin:0 30px;
 }
 .left,.right{
@@ -210,9 +231,12 @@ i:hover{
 
 .education .education1{
     border: solid 2px #F6F4F3;
+    width: 320px;
+    height: 320px;
     width: 300px;
     height: 300px;
     margin: 20px;
+    padding:0 10px;
     text-align: center;
     font-size: 30px;
     box-shadow: 0 0 0.5em #F6F4F3;
@@ -220,6 +244,7 @@ i:hover{
 .education1 h4{
     color: #d9af23;
 }
+
 /* section Contact */
 .contact{
     display: flex;
@@ -227,9 +252,11 @@ i:hover{
     justify-content: center;
     text-align: center;
 }
+
 .form-group{
     width: 100%;
 }
+
 .form-group input,textarea{
     width:20%;
     height: 50px;
@@ -238,33 +265,43 @@ i:hover{
     border-radius: 20px;
     padding: 0 10px;
 }
+
 .form-group textarea{
     height: 80px;
     padding: 20px 10px;
+
 }
 form{
     width: 100%;
 }
+
 .form-group .send{
     background: #d9af23;
     padding: 10px 40px;
     border-radius: 20px;
     color: #011936;   
 }
+
 .form-group .send:hover{
     background: #F6F4F3;
     color: #011936;
 }
+
 footer{
     width: 100%;
+    height: 70px;
     height: 100px;
     font-weight: bold;
     padding-top: 15px;
     margin-top: 50px;
+}
+
+footer{
     background: #F6F4F3;
     color: #011936;
     opacity: 0.5;
 }
+
 .footer ul{
     display: flex;
     flex-direction: row;
@@ -272,10 +309,12 @@ footer{
     justify-content: space-evenly;
     align-items: center;
 }
+
 .footer ul li i {
     padding:0 10px;
     color:#011936;
 }
+
 @media(min-width:930px){
     .form-group{
         width: 100%;
@@ -287,6 +326,7 @@ footer{
         border: solid 1px #5d535c;
         border-radius: 20px;
         padding: 0 10px;
+
     }    
 }
 /* media query : responsivité*/
@@ -315,6 +355,7 @@ footer{
     .send{
         width: 100%;
     } 
+
 }
 @media(max-width: 540px){
     .about-me{
@@ -369,7 +410,9 @@ footer{
         justify-content: start;
         align-items: center;
     } 
+
 }
+
    @media(max-width:320px){
     .home-page{
         height: 100%;
@@ -384,4 +427,4 @@ footer{
         font-size: 30px;
         box-shadow: 0 0 0.5em #F6F4F3;
     }
-   } 
+   }
