@@ -41,6 +41,7 @@ header{
     color: #F6F4F3;
     display: flex;
     position: sticky;
+    top: 0;
     background-color: #011936;
     opacity: 0.8;
 }
