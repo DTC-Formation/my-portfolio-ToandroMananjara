@@ -138,6 +138,10 @@ header .user{
     color: #141414;
     background: #F6F4F3;
 }
+#btn i{
+    font-size:20px; 
+    color: #011936;
+}
 i:hover{
     color: #d9af23;
 }
@@ -181,6 +185,10 @@ i:hover{
 .about-me .bio a:hover{
     color: #011936;
     background: #F6F4F3;
+}
+.download i{
+    font-size:20px; 
+    color: #011936;
 }
 /* bloc competence */
 .skills-container {
