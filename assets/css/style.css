@@ -204,10 +204,14 @@ i:hover{
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 100px;
+
 }
 .icon-skills img{
     width: 200px;
     height: 200px;
+    border: solid 2px #F6F4F3;
+    box-shadow: 5px 5px 10px #F6F4F3;
+    border-radius: 20px;
 }
 
 /* bloc education */
@@ -233,6 +237,7 @@ i:hover{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .education .education1{
@@ -241,7 +246,8 @@ i:hover{
     font-size: 30px;
     text-align: center;
     border: solid 2px #F6F4F3;
-    box-shadow: 0 0 0.5em #F6F4F3;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #F6F4F3;
     margin: 20px;
     padding:0 10px;
 }
@@ -265,8 +271,9 @@ i:hover{
     width:20%;
     height: 50px;
     margin: 10px;
-    border: solid 1px #5d535c;
+    border: none;
     border-radius: 20px;
+
 }
 input:focus{
     outline:2px solid #d9af23;
@@ -320,6 +327,9 @@ footer{
 .footer ul li i {
     color:#011936;
     padding:0 10px;
+}
+.footer a{
+    color: #011936;
 }
 
 @media(min-width:930px){
