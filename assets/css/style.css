@@ -331,7 +331,7 @@ footer{
 .footer a{
     color: #011936;
 }
-
+/* commentaire */
 @media(min-width:930px){
     .form-group{
         width: 100%;
