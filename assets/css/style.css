@@ -2,7 +2,6 @@
 @font-face {
     font-family: astonpoliz;
     src: url(../fonts/Astonpoliz/Astonpoliz.otf),url(../fonts/Astonpoliz/Astonpoliz.ttf);
-
 }
 *{
     list-style: none;
@@ -196,6 +195,7 @@ i:hover{
     overflow: hidden;
     margin: 0;
     padding: 0;
+    padding-top: 20px;
 }
 .skills{
     width: 100%;
@@ -203,7 +203,7 @@ i:hover{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 .icon-skills img{
     width: 200px;
@@ -213,7 +213,7 @@ i:hover{
 /* bloc education */
 .education{
     width: 100%;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 .education-container {
     display: flex;
@@ -267,7 +267,6 @@ i:hover{
     margin: 10px;
     border: solid 1px #5d535c;
     border-radius: 20px;
-    padding: 0 10px;
 }
 input:focus{
     outline:2px solid #d9af23;
