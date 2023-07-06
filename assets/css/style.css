@@ -10,6 +10,9 @@
     font-size: 20px;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
 body{
     margin: 0;
     color: #F6F4F3;
@@ -84,16 +87,19 @@ header .user{
     border-radius: 20px;
 }
 
+
 /* css div container */
 
 /* page d'acceuil */
 .home-page{
     width: 100%;
-    height: 100vh;  
+    height: 100vh;
     display: flex;
-    justify-content: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    margin-bottom:-50px;
+    padding: 0;
 }
 .bg-video{
         width: 100%;
@@ -109,34 +115,27 @@ header .user{
    display: flex;
    justify-content: center;
    align-items: center;
-
-}
-
-.bloc-left{
-    width: fit-content;
     text-align: center;
 }
-.bloc-left .title{
-    width: fit-content;
-}
-.bloc-left .title h2{
+ .title{
+    width: 100%;
+} 
+.title h2{
     color: #F6F4F3;
     font-size: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
-.bloc-left .title h2 span{
+.title h2 span{
     color: #d9af23;
     font-size: 30px;
 }
-.bloc-left .title #btn{
+.title #btn{
     color: #141414; 
     background: #d9af23;
     border-radius: 20px;
-    padding: 10px 40px; 
-
-    
+    padding: 10px 40px;
 }
-.bloc-left .title #btn:hover{
+ .title #btn:hover{
     color: #141414;
     background: #F6F4F3;
 }
@@ -148,11 +147,22 @@ i:hover{
     color: #d9af23;
 }
 /* manipulation des icons reseaux sociaux */
-.bloc-left .title ul{
+.social ul{
     display: flex;
-    justify-content:space-evenly; 
-    margin-top: 150px;
+    justify-content:space-around;
 }
+.social{
+
+    width: 600px;
+    align-items: end;
+}
+.social ul li {
+    margin: 0 20px;
+}
+.social ul li i{
+    font-size: 40px;
+}
+
 
 .about-me .user-1 img{
     width: 300px;
@@ -231,11 +241,7 @@ i:hover{
     padding:0 50px;
 }
 
-.left,.right{
-    /* margin:0 20px; */
-    /* margin:0 30px; */
-}
-.left,.right{
+.education-container-1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -373,6 +379,9 @@ footer{
     h1{
         font-size: 30px;
     }
+    .education h1 i{
+        font-size: 30px;
+    }
     
     .form-group{
         width: 100%;
@@ -391,6 +400,9 @@ footer{
 
 }
 @media(max-width: 540px){
+    .social{
+        width: 300px;
+    }
     .about-me{
         width: 100%;
         display: flex;
@@ -451,12 +463,19 @@ footer{
 
    @media(max-width:320px){
     .home-page{
-        height: 100%;
+        height: 100vh;
     }
     .education .education1{
         width: 280px;
         height: 280px;
         padding:0 px;
         margin: 20px;
+    }
+    .title h2{
+        margin-bottom: 20px;
+    }
+    .social{
+        width: 150px;
+        margin: 20px 0;
     }
    }
