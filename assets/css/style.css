@@ -223,7 +223,7 @@ i:hover{
     width: 200px;
     height: 200px;
     border: solid 2px #F6F4F3;
-    box-shadow: 5px 5px 10px #F6F4F3;
+    box-shadow: 4px 2px 5px #F6F4F3;
     border-radius: 20px;
 }
 
@@ -258,7 +258,7 @@ i:hover{
     text-align: center;
     border: solid 2px #F6F4F3;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px #F6F4F3;
+    box-shadow: 4px 2px 5px #F6F4F3;
     margin: 20px;
     padding:0 10px;
 }
@@ -283,7 +283,7 @@ i:hover{
     width: 70%; 
     border-radius: 20px;
     border: solid 1px #F6F4F3;
-    box-shadow: 5px 5px 5px #F6F4F3;
+    box-shadow: 2px 2px 2px #F6F4F3;
     padding-bottom: 50px;
 }
 
