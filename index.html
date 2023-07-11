@@ -9,20 +9,25 @@
     <title>Toandro Mananjara</title>
 </head>
 <body>
-         <video src="./assets/videos/bg-video-2.mp4" class="bg-video" autoplay muted loop></video> 
-    <header>
+         <video src="./assets/videos/bg-video-2.mp4" class="bg-video" id="video" autoplay muted loop></video> 
+         <div class="bg-img">
+            <img src="./assets/img/dark-bg.jpg" alt="Dark mode" title="Dark mode">
+            
+         </div>
+    <header id="header">
             <div class="user">
                 <!-- <img src="./assets/img/img.jpg" alt=""> -->
                 <i class="fa-sharp fa-solid fa-trademark fa-beat"></i>
             </div>
 
             <div class="mode">
-                <div class="dark-mode">
+                <div class="dark-mode" id="dark-mode">
                     <img src="./assets/img/dark-mode.png" alt="">
-                    
+                     <span id="dark">Dark</span>
                 </div>
-                <div class="light-mode">
+                <div class="light-mode" id="light-mode">
                     <img src="./assets/img/exposure.png" alt="">
+                     <span id="light">light</span> 
                 </div>
             </div>
             <nav class="navbar">
@@ -168,10 +173,10 @@
 
         
     </div>
-    <footer>
-        <div class="footer">
-            <ul>
-                <li><i class="fa-solid fa-phone"></i><a href="tel:+261340312163" title="Cliquer pour appeller">+261 34 03 121 63</a></li>
+    <footer >
+        <div class="footer" >
+            <ul >
+                <li ><i class="fa-solid fa-phone"></i><a href="tel:+261340312163" title="Cliquer pour appeller">+261 34 03 121 63</a></li>
                 <li><i class="fa-solid fa-envelope"></i><a href="mailto:mahasalotra@gmail.com" >mahasalotra@gmail.com</a></li>
                 <li><i class="fa-solid fa-location-dot"></i>Nanisana Iadiambola </li>
             </ul> 
@@ -181,6 +186,8 @@
             <div class="footer-child"><i class="fa-solid fa-location-dot"></i>Nanisana Iadiambola</div> -->
         </div>
     </footer>
+
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
