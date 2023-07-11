@@ -246,7 +246,6 @@ i:hover{
     width: 100%;
     overflow: hidden;
     margin: 0;
-    padding: 0;
     padding-top: 20px;
 }
 .skills{
@@ -255,7 +254,7 @@ i:hover{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-top: 100px;
+    padding-top: 20px;
 
 }
 .icon-skills img{
@@ -307,12 +306,17 @@ i:hover{
 
 /* section Contact */
 .contact{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
      align-items: center; 
     text-align: center; 
     margin-top: 50px;
+}
+#contact{
+    position: absolute;
+    top: -50px;
 }
 .contact-container h1{
     margin-bottom: 0;
