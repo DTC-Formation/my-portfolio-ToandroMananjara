@@ -72,6 +72,7 @@ header .user{
     top:50%;
     bottom:50%;
     right: 60px;
+    z-index: 2;
 }
 .mode img{
     width: 50px;
@@ -317,6 +318,8 @@ i:hover{
 #contact{
     position: absolute;
     top: -50px;
+    width: 1px;
+    height: 1px;
 }
 .contact-container h1{
     margin-bottom: 0;
