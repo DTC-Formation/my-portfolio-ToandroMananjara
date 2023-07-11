@@ -13,6 +13,9 @@
 a{
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     color: #F6F4F3;
@@ -44,9 +47,9 @@ header{
     color: #F6F4F3;
     display: flex;
     position: sticky;
+    z-index: 2;
     top: 0;
     background-color: #011936;
-    opacity: 0.8;
 }
 
 header a{
@@ -65,19 +68,20 @@ header .user{
 }
 
 .mode{
-    position:absolute;
-    top:10px;
-    left:125px;
+    position:fixed;
+    top:50%;
+    bottom:50%;
+    right: 60px;
 }
 .mode img{
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
 }
 .light-mode,.dark-mode{
     position: absolute;
     display: flex;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -89,14 +93,7 @@ header .user{
     z-index: 2;
     background: #fff;
 }
-#light{
-     color:transparent;
-}
-#light,#dark{
-    margin-left: 5px;
-    position: relative;
-    margin-top: 5px;
-}
+
 
 /* navbar :acceuil ,a propos,competence, education,contact positionné à droite  */
 .navbar{
@@ -146,8 +143,11 @@ header .user{
         object-fit: cover;
         z-index: -1;
     }
-    .bg-img img{
-        z-index: -2;
+    .bg-img {
+        visibility: hidden;
+    }
+    .container{
+        position: relative;
     }
 .home-page .home-container{
    width: 100%;
@@ -334,6 +334,7 @@ i:hover{
     width:80%;
     height: 50px;
     margin: 10px;
+    padding: 0 10px;
     border: none;
     border-radius: 20px;
 
@@ -348,6 +349,7 @@ input:focus{
     width: 80%;
      height: 80px; 
     padding: 20px 10px;
+    margin-bottom: 30px;
 
 }
 /* form{
@@ -359,6 +361,7 @@ form .send{
     background: #d9af23;
     border-radius: 20px;
     padding: 10px 40px;
+    margin-top: 30px;
 }
 
 .form-group .send:hover{
