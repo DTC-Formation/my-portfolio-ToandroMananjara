@@ -290,9 +290,17 @@ i:hover{
     justify-content: space-evenly;
     padding-top: 20px;
 }
+.icon-skills{
+    text-align: center;
+}
+.icon-skills div{
+    margin: 10px;
+    font-size: 25px;
+}
 .icon-skills img{
     width: 200px;
     height: 200px;
+
     border: solid 2px #F6F4F3;
     box-shadow: 4px 2px 5px #F6F4F3;
     border-radius: 20px;
