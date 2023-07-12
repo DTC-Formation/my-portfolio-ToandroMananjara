@@ -81,13 +81,17 @@ header .user{
 
 .menu-toogle{
     display: none;
+    text-align: center;
+}
+.menu-toogle h2{
+    color: #d9af23;
 }
 .link-toggle ul li{
     display: flex;
     justify-content: center;
     align-items: center;
     /* background: #000; */
-    margin: 5px;
+    margin: 15px;
     text-align: center;
 }
 .link-toggle ul li a{
