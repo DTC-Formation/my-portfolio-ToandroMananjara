@@ -12,11 +12,13 @@
 }
 a{
     text-decoration: none;
+    color: #fff;
 }
 html{
     scroll-behavior: smooth;
 }
 body{
+
     margin: 0;
     color: #F6F4F3;
     /* background-image: url(../img/dark-bg.jpg); */
@@ -60,6 +62,38 @@ header .user{
     align-items: center;
     margin-left: 50px;
 }
+.menu{
+    position: absolute;
+    top: -100px;
+    /* top: 10px; */
+    /* right: 50px; */
+}
+.menu-toogle{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.menu-toogle{
+    display: none;
+}
+.link-toggle ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #000; */
+    margin: 5px;
+    text-align: center;
+}
+.link-toggle ul li a{
+    padding: 10px;
+} 
+
 
 .user img{
     width: 50px;
@@ -121,6 +155,17 @@ header .user{
     border-radius: 20px;
 }
 
+.container{
+    position: relative;
+    /* display: none;  */
+}
+
+.container-toogle{
+    display: none;
+}
+.menu-click{
+    display: block;
+}
 
 /* css div container */
 
@@ -146,9 +191,6 @@ header .user{
     }
     .bg-img {
         visibility: hidden;
-    }
-    .container{
-        position: relative;
     }
 .home-page .home-container{
    width: 100%;
@@ -385,6 +427,7 @@ footer{
 }
 
 footer{
+    position: relative;
     background: #F6F4F3;
     color: #011936;
     opacity: 0.5;
@@ -422,11 +465,16 @@ footer{
 }
 /* media query : responsivité*/
 @media( max-width :930px){
-    .navbar{
+    .link{
         visibility: hidden;
+    }
+    .menu{
+         top: 10px; 
+         right: 40px; 
     }
     h1{
         font-size: 30px;
+        padding-top: 20px;
     }
     .education h1 i{
         font-size: 30px;
@@ -500,6 +548,7 @@ footer{
         flex-direction: column;
         flex-wrap: nowrap;
         padding: 0 10px;
+        padding-top:5px;
         
     }
      .footer ul{

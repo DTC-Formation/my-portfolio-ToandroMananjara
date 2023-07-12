@@ -4,6 +4,19 @@ let dark = document.getElementById('dark-mode')
 let light = document.getElementById('light-mode')
 let body = document.body
 let header = document.getElementById('header')
+let footer = document.getElementById('footer')
+let menu1=document.getElementById('menu-1')
+let menu2=document.getElementById('menu-2')
+
+let container = document.querySelector('.container')
+let linkToogle = document.querySelector('.menu-toogle')
+
+let acceuil = document.getElementById('acceuil')
+let about = document.getElementById('Apropos')
+let competence = document.getElementById('skill')
+let education = document.getElementById('etude')
+let contact = document.getElementById('mecontacter')
+
 
 dark.addEventListener('click',function(){
     dark.style.zIndex='-2'
@@ -19,6 +32,28 @@ light.addEventListener('click',function(){
     bgVideo.style.visibility='visible'
     bgImg.style.visibility='hidden'   
     header.style.backgroundColor='#011936'
-
-    
 })
+
+menu1.addEventListener('click',function(){
+    
+    linkToogle.classList.toggle('menu-click')
+    container.classList.toggle('container-toogle')  
+
+    footer.style.display='none'
+})
+function menu(a){
+    a.addEventListener('click',function(){
+
+    linkToogle.classList.toggle('menu-click')
+    container.classList.toggle('container-toogle')  
+    footer.style.display='block'
+
+})
+
+}
+
+menu(acceuil)
+menu(about)
+menu(competence)
+menu(education)
+menu(contact)
