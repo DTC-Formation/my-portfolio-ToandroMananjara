@@ -4,7 +4,7 @@ let dark = document.getElementById('dark-mode')
 let light = document.getElementById('light-mode')
 let body = document.body
 let header = document.getElementById('header')
-let footer = document.getElementById('footer')
+let footer = document.querySelector('.footer-container')
 let menu1=document.getElementById('menu-1')
 let menu2=document.getElementById('menu-2')
 
@@ -36,18 +36,16 @@ light.addEventListener('click',function(){
 
 menu1.addEventListener('click',function(){
     
+    footer.classList.toggle('footer-toogle')
     linkToogle.classList.toggle('menu-click')
     container.classList.toggle('container-toogle')  
-
-    footer.style.display='none'
 })
 function menu(a){
     a.addEventListener('click',function(){
 
     linkToogle.classList.toggle('menu-click')
     container.classList.toggle('container-toogle')  
-    footer.style.display='block'
-
+     footer.classList.toggle('footer-toogle')
 })
 
 }
