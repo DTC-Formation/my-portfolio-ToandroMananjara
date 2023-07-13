@@ -16,7 +16,7 @@ let about = document.getElementById('Apropos')
 let competence = document.getElementById('skill')
 let education = document.getElementById('etude')
 let contact = document.getElementById('mecontacter')
-
+let nav = [acceuil,about,competence,education,contact]
 
 dark.addEventListener('click',function(){
     dark.style.zIndex='-2'
@@ -40,18 +40,14 @@ menu1.addEventListener('click',function(){
     linkToogle.classList.toggle('menu-click')
     container.classList.toggle('container-toogle')  
 })
-function menu(a){
-    a.addEventListener('click',function(){
 
-    linkToogle.classList.toggle('menu-click')
-    container.classList.toggle('container-toogle')  
-     footer.classList.toggle('footer-toogle')
-})
+for(let i in nav){
+    nav[i].addEventListener('click',function(){
 
+        linkToogle.classList.toggle('menu-click')
+        container.classList.toggle('container-toogle')  
+         footer.classList.toggle('footer-toogle')
+    })
 }
 
-menu(acceuil)
-menu(about)
-menu(competence)
-menu(education)
-menu(contact)
+
