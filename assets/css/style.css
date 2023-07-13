@@ -17,6 +17,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    background: #183059;
     margin: 0;
     color: #F6F4F3;
     /* background-image: url(../img/dark-bg.jpg); */
@@ -36,6 +37,48 @@ i{
 ul{
     padding: 0;
 }
+/*touche mode ddark et mode light*/
+.mode{
+    position:fixed;
+    top:50%;
+    bottom:50%;
+    right: 60px;
+    z-index: 2;
+}
+.mode img{
+    width: 50px;
+    height: 50px;
+}
+.light-mode,.dark-mode{
+    position: absolute;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.light-mode{
+    z-index: -2;
+    background:#000; 
+}
+.dark-mode{
+    z-index: 2;
+    background: #fff;
+}
+
+/*background imge et video*/
+.bg-video,.bg-img img{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .bg-img {
+        visibility: hidden;
+    }
 /*css header  */
 header{
     width: 100%;
@@ -55,11 +98,10 @@ header .user{
     align-items: center;
     margin-left: 50px;
 }
+/*Menu pour small device*/
 .menu{
     position: absolute;
     top: -100px;
-    /* top: 10px; */
-    /* right: 50px; */
 }
 .menu-toogle{
     width: 100%;
@@ -96,33 +138,7 @@ header .user{
     height: 50px;
     border-radius: 50%;
 }
-.mode{
-    position:fixed;
-    top:50%;
-    bottom:50%;
-    right: 60px;
-    z-index: 2;
-}
-.mode img{
-    width: 50px;
-    height: 50px;
-}
-.light-mode,.dark-mode{
-    position: absolute;
-    display: flex;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-.light-mode{
-    z-index: -2;
-    background:#000; 
-}
-.dark-mode{
-    z-index: 2;
-    background: #fff;
-}
+
 /* navbar :acceuil ,a propos,competence, education,contact positionné à droite  */
 .navbar{
     position: absolute;
@@ -175,18 +191,8 @@ header .user{
     align-items: center;
     padding: 0;
 }
-.bg-video,.bg-img img{
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-        z-index: -1;
-    }
-    .bg-img {
-        visibility: hidden;
-    }
+
+
 .home-page .home-container{
    width: 100%;
    display: flex;
@@ -358,7 +364,7 @@ i:hover{
     height: 1px;
 }
 .contact-container h1{
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 .contact-container{
     width: 70%; 
