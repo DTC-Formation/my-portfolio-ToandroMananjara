@@ -164,7 +164,6 @@ header .user{
 }
 .container{
     position: relative;
-    /* display: none;  */
 }
 .container-toogle{
     display: none;
@@ -482,7 +481,7 @@ footer{
         width: 100%;
     } 
 }
-@media(max-width: 540px){
+@media(max-width: 600px){
     .social{
         width: 300px;
     }
