@@ -122,16 +122,16 @@ header .user{
     color: #d9af23;
     font-size: 35px;
 }
-.link-toggle ul li{
+.link-toggle span{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px;
+    margin: 20px;
     text-align: center;
 }
-.link-toggle ul li a{
+/* .link-toggle ul li a{
     padding: 10px;
-} 
+}  */
 .user img{
     width: 50px;
     height: 50px;
@@ -162,6 +162,7 @@ header .user{
     background: #d9af23;
     border-radius: 20px;
 }
+
 .container{
     position: relative;
 }
@@ -202,11 +203,16 @@ header .user{
     width: 100%;
 } 
 .title h2{
+    margin: 80px 0;
+    text-align: center;
+}
+.title h2 {
     color: #F6F4F3;
     font-size: 50px;
-    margin-bottom: 80px;
+
+    
 }
-.title h2 span{
+.title h2 #titre{
     color: #d9af23;
     font-size: 30px;
 }
@@ -258,7 +264,7 @@ i:hover{
 .about-me .bio{
     width: 50%;
 }
-.about-me .bio span{
+.about-me .bio #nom{
     color: #d9af23;
 }
 .about-me .bio div .texte{
