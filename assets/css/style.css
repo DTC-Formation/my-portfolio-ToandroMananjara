@@ -292,7 +292,7 @@ i:hover{
 .about-me .bio{
     width: 50%;
 }
-.about-me .bio #nom{
+.about-me .bio span{
     color: #d9af23;
 }
 .about-me .bio div .texte{
