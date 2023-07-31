@@ -122,7 +122,7 @@ header .user{
     color: #d9af23;
     font-size: 35px;
 }
-.link-toggle span{
+.link-toggle li{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,7 +182,7 @@ header .user{
 /* page d'acceuil */
 .home-page{
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 50px);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -201,6 +201,7 @@ header .user{
     width: 100%;
     height: calc(100vh - 50px);
     background:#fff;
+    opacity: 0.9;
     z-index: 55;
 }
 .loader-item{
@@ -284,7 +285,7 @@ i:hover{
 }
 /* div about_me */
 .about-me{
-    display: flex;   
+    display: none;   
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-evenly;
@@ -317,6 +318,7 @@ i:hover{
 /* bloc competence */
 .skills-container {
     width: 100%;
+    display: none;
     overflow: hidden;
     margin: 0;
     padding-top: 20px;
@@ -348,6 +350,7 @@ i:hover{
 .education{
     width: 100%;
     padding-top: 20px;
+    display: none;
 }
 .education-container {
     display: flex;
@@ -383,7 +386,7 @@ i:hover{
 /* section Contact */
 .contact{
     position: relative;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
      align-items: center; 
@@ -443,7 +446,11 @@ form .send{
     color: #011936;
     background: #F6F4F3;
 }
+.footer-container{
+    display: none;
+}
 footer{
+    
     width: 100%;
     height: 100px;
     font-weight: bold;

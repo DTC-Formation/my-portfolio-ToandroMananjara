@@ -3,7 +3,7 @@ let portfolio = {
 
     // }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     competence : {
-        titre : 'Competence',
+        titre : 'Compétences',
 
         Skills :[
             
@@ -85,6 +85,12 @@ let homePage  = document.querySelector('.home-page')
 setTimeout(() => {
     document.querySelector('.loader').style.display="none"
     homePage.style.display="flex"
+    document.querySelector('.about-me').style.display="flex"
+    document.querySelector('.skills-container').style.display="block"
+    document.querySelector('.education').style.display="block"
+    document.querySelector('.contact').style.display="flex"
+    document.querySelector('.footer-container').style.display="block"
+
 
 }, 5000);
 
