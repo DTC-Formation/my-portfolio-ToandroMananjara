@@ -1,54 +1,7 @@
 let portfolio = {
     // mode :{
 
-    // }
-
-    link :[
-        {
-            lien : '#',
-            titre : 'Acceuil'
-        },
-
-        {
-            lien : '#about',
-            titre : 'A propos'
-        },
-        {
-            lien : '#competence',
-            titre : 'Competence'
-        },
-         {
-            lien : '#education',
-            titre : 'Education'
-        },
-        {
-            lien : '#contact',
-            titre : 'contact'
-        }
-    ],
-
-    acceuil :{
-        pseudo : "Toandro Mananjara",
-        titre :  "Devoloppeleur Web",
-        btn : "Voir plus " 
-    },
-
-    aboutMe : {
-        image:{
-            lien : './assets/img/img.png' ,
-            alt : 'Photo de Toandro'
-        },
-        bio : {
-            nom:'MAHASALOTRA Toandromananjara',
-            texte : 'J\'ai 22 ans et je  suis en 3 eme année de licence en Mathématiques et Informatique à l\'université d\'Antananarivo.Mais en ce moment, j\'apprends en autodidacte la Programmation  et le Developpement Web. ',
-            download:{
-                lien : './assets/CV_Toandro.pdf',
-                texte : 'Telecharger mon CV'
-            } 
-        }
-
-
-    },
+    // }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     competence : {
         titre : 'Competence',
 
@@ -124,72 +77,16 @@ let portfolio = {
             }
     
         ]
-    },
-    
-    
-
-    contact :{
-        GrandTitre : 'Me contacter',
-        form :{
-            inputNom :{
-                type:'text',
-                placeholder:'Nom et Prenom'
-            },
-            inputEmail :{
-                type:'email',
-                placeholder:'Adresse E-mail'
-            },
-            inputMessage :{
-                cols : "30",
-                rows: "10",
-                placeholder:'Nom et Prenom'
-            },
-            boutonEnvoyer:'Envoyer'
-        }
-    },
-
-    footer :['<i class="fa-solid fa-phone"></i>+261 34 03 121 63','<i class="fa-solid fa-envelope"></i>mahasalotra@gmail.com',
-        '<i class="fa-solid fa-location-dot"></i>Nanisana Iadiambola'
-    ]
+    }
     
 }
 
+let homePage  = document.querySelector('.home-page')
+setTimeout(() => {
+    document.querySelector('.loader').style.display="none"
+    homePage.style.display="flex"
 
-let link = document.querySelector('.link')
-let linkToggle = document.getElementById('link-toggle')
-
-for (let k = 0 ;k<5 ;k++){
-    let span = document.createElement('span')
-
-    link.appendChild(span)
-
-    let a = document.createElement('a')
-    span.appendChild(a)
-
-    a.innerHTML = portfolio.link[k].titre
-    a.href = portfolio.link[k].lien
-}
-
-let h2 = document.getElementById('h2')
-h2.innerHTML += portfolio.acceuil.pseudo + '<br>' +  '<span id="titre">' + portfolio.acceuil.titre + '</span>'
-
-let btn  = document.getElementById('btn')
-btn.innerHTML += portfolio.acceuil.btn + '<i class="fa-solid fa-arrow-down">'+''+'</i>'
- 
-let userImage = document.getElementById('user-1-img')
-userImage.src = portfolio.aboutMe.image.lien
-userImage.alt = portfolio.aboutMe.image.alt
-
-
-let bioh3 = document.getElementById('bio-h3')
-    bioh3.innerHTML += 'Je m\'appelle' + ' '+ '<span id="nom">' + portfolio.aboutMe.bio.nom+ '</span>' 
-
-let bioTexte = document.querySelector('.texte')
- bioTexte.innerHTML = portfolio.aboutMe.bio.texte 
-
- let linkDownloadCv = document.getElementById('download-cv')
- linkDownloadCv.href = portfolio.aboutMe.bio.download.lien
- linkDownloadCv.innerHTML += portfolio.aboutMe.bio.download.texte +' '+ '<i class="fa-solid fa-download">'+''+'</i>'
+}, 5000);
 
 let GrandTitre = document.querySelector('.competence-titre')
 GrandTitre.innerHTML = portfolio.competence.titre
@@ -250,56 +147,6 @@ for (let i= 0 ;i<portfolio.formation.education.length;i++){
 
 }
 
-let contactContainer = document.querySelector('.contact-container')
-let titreContact = document.createElement('h1')
-
-contactContainer.appendChild(titreContact)
-titreContact.innerHTML = portfolio.contact.GrandTitre
-
-let form = document.createElement('form')
-contactContainer.appendChild(form)
-
-let inputNom = document.createElement('input')
-form.appendChild(inputNom)
-
-inputNom.type = portfolio.contact.form.inputNom.type
-inputNom.placeholder= portfolio.contact.form.inputNom.placeholder
-
-let inputEmail = document.createElement('input')
-form.appendChild(inputEmail)
-
-inputEmail.type =portfolio.contact.form.inputEmail.type
-inputEmail.placeholder= portfolio.contact.form.inputEmail.placeholder
-
-let inputMessage = document.createElement('textarea')
-
-
-form.appendChild(inputMessage)
-
-inputMessage.placeholder= portfolio.contact.form.inputMessage.placeholder
-inputMessage.cols = portfolio.contact.form.inputMessage.cols
-inputMessage.rows = portfolio.contact.form.inputMessage.rows
-
-let br = document.createElement ('br')
-form.appendChild(br)
-
-let boutonEnvoyer = document.createElement('a')
-form.appendChild(boutonEnvoyer)
-boutonEnvoyer.classList.add('send')
-
-boutonEnvoyer.innerHTML = portfolio.contact.form.boutonEnvoyer
-
-let divFooter = document.querySelector('.footer')
-let ul = document.createElement('ul')
-divFooter.appendChild(ul)
-for (let i = 0;i<3;i++){
-    let li= document.createElement('li')
-    ul.appendChild(li)
-
-    li.innerHTML=portfolio.footer[i]
-}
-
-
 let bgVideo = document.getElementById('video')
 let bgImg = document.getElementById('img-bg')
 let dark = document.getElementById('dark-mode')
@@ -355,5 +202,4 @@ for(let n in nav){
     })
     
 }
-
 

@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://fontawesome.com">
     <title>Toandro Mananjara</title>
 </head>
-
 <body>
     <div class="mode">
         <div class="dark-mode" id="dark-mode">
@@ -18,86 +16,94 @@
         <div class="light-mode" id="light-mode">
             <img src="./assets/img/exposure.png" alt="">
         </div>
-    </div>
-    <video src="./assets/videos/bg-video-2.mp4" class="bg-video" id="video" autoplay muted loop></video>
-    <div class="bg-img" id="img-bg">
-        <img src="./assets/img/dark-bg.jpg" alt="Dark mode" title="Dark mode">
-
-    </div>
+    </div>   
+         <video src="./assets/videos/bg-video-2.mp4" class="bg-video" id="video" autoplay muted loop></video> 
+         <div class="bg-img" id="img-bg">
+            <img src="./assets/img/dark-bg.jpg" alt="Dark mode" title="Dark mode">
+            
+         </div>
     <header id="header">
-        <div class="user">
-            <i class="fa-sharp fa-solid fa-trademark "></i>
-        </div>
-
-        <nav class="navbar">
-            <div class="menu">
-                <i class="fa-solid fa-bars" id="menu-1"></i>
+            <div class="user">
+                <!-- <img src="./assets/img/img.jpg" alt=""> -->
+                <i class="fa-sharp fa-solid fa-trademark "></i>
             </div>
-
-            <div class="link">
-
-            </div>
-        </nav>
-
-
-
-
+            <nav class="navbar" >
+                    <div class="menu">
+                        <i class="fa-solid fa-bars" id="menu-1"></i>
+                    </div>
+               
+                    <div class="link">
+                        <span><a href="#">Acceuil</a></span>
+                        <span> <a href="#about">A propos</a></span>
+                        <span><a href="#competence">Compétences</a></span>
+                        <span><a href="#education">Education</a></span>
+                        <span><a href="#contact">Contact</a></span>
+                    </div>
+            </nav>
+            
+        
+        
     </header>
     <div class="menu-toogle">
-        <h2>-- Menu --</h2>
-        <div class="link-toggle" id="link-toogle">
-            <span><a href="#" id="acceuil">Acceuil</a></span><br>
-            <span> <a href="#about" id="Apropos">A propos</a></span><br>
-            <span><a href="#competence" id="skill">Compétences</a></span><br>
-            <span><a href="#education" id="etude">Education</a></span><br>
-            <span><a href="#contact" id="mecontacter">Contact</a></span>
-
+         <h2 >-- Menu --</h2>
+        <div class="link-toggle">
+            <ul >
+                <li > <a href="#" id="acceuil">Acceuil</a></li>
+                <li ><a href="#about" id="Apropos">A propos</a></li>
+                <li ><a href="#competence" id="skill">Compétences</a></li>
+                <li ><a href="#education" id="etude">Education</a></li>
+                <li ><a href="#contact" id="mecontacter">Contact</a></li>
+            </ul>
+           
         </div>
     </div>
     <div class="container" id="home">
-
+        <div class="loader">
+            <div class="loader-item"></div>
+        </div>
         <div class="home-page ">
-
-
-
+            
+    
             <div class="home-container">
-
-                <div class="title">
-                    <h2 id="h2"></h2>
-
-                    <a href="#about" id="btn"></a>
-
-                </div>
-
+              
+                    <div class="title">
+                        <h2>Toandro Mananjara <br><span>Developpeur web junior</span></h2>
+            
+                         <a href="#about" id="btn">Voir plus  <i class="fa-solid fa-arrow-down"></i></a>
+         
+                    </div>   
+                
             </div>
             <div class="social ">
-                <ul class="icno-social">
-                    <li class="icon"> <a href="https://www.facebook.com/anwar.mananjara" target="_blank"> <i
-                                class="fa-brands fa-facebook"></i></a></li>
+                <ul>
+                    <li class="icon"> <a href="https://www.facebook.com/anwar.mananjara" target="_blank">  <i class="fa-brands fa-facebook"></i></a></li>
                     <li class="icon"> <a href="#"><i class="fa-brands fa-twitter"></i></a> </li>
                     <li class="icon"> <a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li class="icon"> <a href="https://github.com/ToandroMananjara" target="_blank"><i
-                                class="fa-brands fa-github"></i></a> </li>
+                    <li class="icon"> <a href="https://github.com/ToandroMananjara" target="_blank"><i class="fa-brands fa-github"></i></a> </li>
                 </ul>
             </div>
         </div>
-
+            
         <div class="about-me" id="about">
+            <div class="user-1" >
+                <img src="./assets/img/img.png" alt="Photo de Toandro">
+            </div>
+            <div class="bio"> <!--bloc biographie-->       
+                    <h3>Je m'apelle <span>MAHASALOTRA Toandromananjara</span></h3>
+                    <p class="texte" >
+                        J'ai 22 ans et je  suis en 3 eme année de licence en 
+                        Mathématiques et Informatique à l'université d'Antananarivo.
+                        Mais en ce moment, j'apprends en autodidacte la Programmation  et le Developpement Web.
+                        Mon objectif est d'appliquer les Mathématiques que j'étudie pour finir dans le metier de data.            
+                    </p>
 
-            <div class="user-1">
-                <img id="user-1-img">
+                   <p class="download"><a href="./assets/CV_Toandro.pdf" download>Télécharger le CV <i class="fa-solid fa-download"></i></a></p> 
             </div>
 
-            <div class="bio"> <!--bloc biographie-->
-                <h3 id="bio-h3"></h3>
-                <p class="texte"></p>
-                <p class="download"><a download id="download-cv"></a></p>
-            </div>
 
+           </div>
 
-        </div>
-
-        <div class="skills-container" id="competence">
+           <div class="skills-container" id="competence">
             <h1 class="competence-titre"></h1>
             <div class="skills">
                 
@@ -114,31 +120,39 @@
             </div>
 
         </div>
-
-        <div class="contact">
+        <div class="contact" >
             <div id="contact"></div>
             <div class="contact-container">
-    
-        
+                <h1>Me contacter</h1>
+                <!-- <div class="form-group"> -->
+                    <form action="">
+                        <input type="text" placeholder="Nom et prénom*"><br>
+                        <input type="email" placeholder="Adresse E-mail*"><br>
+                        <input type="text" placeholder="Objet*"><br>
+                        <!-- <input type="text" placeholder="Votre message*" class="message"> -->
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea><br>
+                         <a href="" class="send">Envoyer</a>
+                    </form>
+                <!-- </div> -->
             </div>
-
+            
+            
         </div>
-
-
+        
     </div>
-    <footer class="footer-container">
-        <div class="footer">
-            <!-- <ul>
-                <li><i class="fa-solid fa-phone"></i><a href="tel:+261340312163" title="Cliquer pour appeller">+261 34
-                        03 121 63</a></li>
-                <li><i class="fa-solid fa-envelope"></i><a href="mailto:mahasalotra@gmail.com">mahasalotra@gmail.com</a>
-                </li>
-                <li><i class="fa-solid fa-location-dot"></i>Nanisana Iadiambola</li>
-            </ul> -->
+    <footer class="footer-container" >
+        <div class="footer" >
+            <ul >
+                <li ><i class="fa-solid fa-phone"></i><a href="tel:+261340312163" title="Cliquer pour appeller">+261 34 03 121 63</a></li>
+                <li><i class="fa-solid fa-envelope"></i><a href="mailto:mahasalotra@gmail.com" >mahasalotra@gmail.com</a></li>
+                <li><i class="fa-solid fa-location-dot"></i>Nanisana Iadiambola </li>
+            </ul> 
+<!--             
+            <div class="footer-child"><i class="fa-solid fa-phone">+261 34 03 121 63</i></div>
+            <div class="footer-child"><i class="fa-solid fa-envelope">mahasalotra@gmail.com</i></div>
+            <div class="footer-child"><i class="fa-solid fa-location-dot"></i>Nanisana Iadiambola</div> -->
         </div>
     </footer>
-
     <script src="./assets/js/index.js"></script>
 </body>
-
 </html>

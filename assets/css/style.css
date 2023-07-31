@@ -190,8 +190,37 @@ header .user{
     align-items: center;
     padding: 0;
 }
-
-
+.home-page{
+    display: none;
+}
+.loader{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background:#fff;
+    z-index: 55;
+}
+.loader-item{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: solid 5px transparent;
+    border-top: solid 5px #011936;
+    border-bottom: solid 5px #011936;
+    animation: loader 2s infinite linear;
+}
+@keyframes loader {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
 .home-page .home-container{
    width: 100%;
    display: flex;
