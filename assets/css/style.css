@@ -527,7 +527,7 @@ footer{
     }
     .about-me{
         width: 100%;
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
