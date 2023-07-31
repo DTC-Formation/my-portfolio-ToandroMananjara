@@ -197,7 +197,7 @@ menu1.addEventListener('click',function(){
     container.classList.toggle('container-toogle') 
     
     footer1.style.position="absolute"
-    footer1.style.top="calc(100vh - 190px)" 
+    footer1.style.top="calc(100vh - 240px)" 
 
      
 })
