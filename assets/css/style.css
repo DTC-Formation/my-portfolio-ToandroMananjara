@@ -183,16 +183,14 @@ header .user{
 .home-page{
     width: 100%;
     height: calc(100vh - 50px);
-    display: flex;
+    display: none;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 0;
 }
-.home-page{
-    display: none;
-}
+
 .loader{
     position: absolute;
     display: flex;
