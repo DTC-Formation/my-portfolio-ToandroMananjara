@@ -20,6 +20,7 @@ body{
     background: #183059;
     margin: 0;
     color: #F6F4F3;
+    position: relative;
     /* background-image: url(../img/dark-bg.jpg); */
 }
 h1{
@@ -461,6 +462,10 @@ footer{
     color: #011936;
     opacity: 0.5;
 }
+.footer-container{
+    position: relative;
+    bottom: 0;
+}
 .footer ul{
     display: flex;
     flex-direction: row;
@@ -576,6 +581,7 @@ footer{
         padding-top:5px;
         
     }
+ 
      .footer ul{
         display: flex;
         justify-content: start;

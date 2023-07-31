@@ -195,17 +195,20 @@ menu1.addEventListener('click',function(){
     footer.classList.toggle('footer-toogle')
     linkToogle.classList.toggle('menu-click')
     container.classList.toggle('container-toogle') 
-
+    
+    footer1.style.position="absolute"
+    footer1.style.top="calc(100vh - 190px)" 
 
      
 })
+let footer1 =   document.querySelector('.footer-container')
 for(let n in nav){
     nav[n].addEventListener('click',function(){
 
         linkToogle.classList.toggle('menu-click')
         container.classList.toggle('container-toogle')  
-         footer.classList.toggle('footer-toogle')
-    })
-    
-}
 
+   
+    })
+ 
+}
