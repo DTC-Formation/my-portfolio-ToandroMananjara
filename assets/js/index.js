@@ -3,7 +3,7 @@ let portfolio = {
 
     // }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     competence : {
-        titre : 'Compétences',
+        titre : 'Skills',
 
         Skills :[
             
@@ -43,37 +43,37 @@ let portfolio = {
     },
 
     formation :{
-        GrandTitre : '<i class="fa-solid fa-graduation-cap">'+'</i> Education & Formation',
+        GrandTitre : '<i class="fa-solid fa-graduation-cap">'+'</i> Education & Training',
         education :[
             {
                 logo : '<i class="fa-solid fa-award">'+''+'</i>',
                 annee : '2023',
                 ecole : 'Digital Training Center',
-                degré : 'Formation en developpement web'
+                degré : 'Web Development Training'
             },
             {
                 logo : '<i class="fa-solid fa-award">'+''+'</i>',
                 annee : '2022-2023',
-                ecole : 'Université d\'Antananarivo',
-                degré : '3ème année de licence <br>en Mathématiques et Informatique '
+                ecole : 'University of Antananarivo',
+                degré : '3rd year of a Bachelor\'s degree in Mathematics and Computer Science '
             },
             {
                 logo : '<i class="fa-solid fa-award">'+''+'</i>',
                 annee : '2020-2022',
-                ecole : 'Université d\'Antananarivo',
-                degré : '2ème année de licence <br>en Mathématiques et Informatique '
+                ecole : 'University of Antananarivo',
+                degré : '2nd year of a Bachelor\'s degree in Mathematics and Computer Science '
             },
             {
                 logo : '<i class="fa-solid fa-award">'+''+'</i>',
                 annee : '2019-2020',
-                ecole : 'Université d\'Antananarivo',
-                degré : '3ème année de licence <br>en Mathématiques et Informatique '
+                ecole : 'University of Antananarivo',
+                degré : ' 1st year of a Bachelor\'s </br> degree  in Mathematics and Computer Science '
             },
             {
                 logo : '<i class="fa-solid fa-award">'+''+'</i>',
                 annee : '2018',
-                ecole : 'Lycee Nanisana',
-                degré : 'Baccamauréat serie C'
+                ecole : 'Nanisana High School',
+                degré : 'Baccalaureate series C'
             }
     
         ]
@@ -92,7 +92,7 @@ setTimeout(() => {
     document.querySelector('.footer-container').style.display="block"
 
 
-}, 5000);
+}, 3000);
 
 let GrandTitre = document.querySelector('.competence-titre')
 GrandTitre.innerHTML = portfolio.competence.titre
@@ -160,19 +160,11 @@ let light = document.getElementById('light-mode')
 let body = document.body
 let header = document.getElementById('header')
 let footer = document.querySelector('.footer-container')
-let menu1=document.getElementById('menu-1')
-let menu2=document.getElementById('menu-2')
+let menu=document.querySelector('.menu')
+let link = document.querySelector('.link')
+
 
 let container = document.querySelector('.container')
-let linkToogle = document.querySelector('.menu-toogle')
-
-let acceuil = document.getElementById('acceuil')
-let about = document.getElementById('Apropos')
-let competence = document.getElementById('skill')
-let education = document.getElementById('etude')
-let contact = document.getElementById('mecontacter')
-let nav = [acceuil,about,competence,education,contact]
-
  
 dark.addEventListener('click',function(){
     dark.style.zIndex='-2'
@@ -180,6 +172,7 @@ dark.addEventListener('click',function(){
     bgVideo.style.visibility='hidden'
     bgImg.style.visibility='visible'
     header.style.backgroundColor='#000'
+    link.style.backgroundColor='#000'
 
 })
 light.addEventListener('click',function(){
@@ -188,27 +181,23 @@ light.addEventListener('click',function(){
     bgVideo.style.visibility='visible'
     bgImg.style.visibility='hidden'   
     header.style.backgroundColor='#011936'
+    link.style.backgroundColor='#011936'
 })
 
-menu1.addEventListener('click',function(){
+menu.addEventListener('click',function(){
     
-    footer.classList.toggle('footer-toogle')
-    linkToogle.classList.toggle('menu-click')
-    container.classList.toggle('container-toogle') 
-    
-    footer1.style.position="absolute"
-    footer1.style.top="calc(100vh - 240px)" 
-
-     
-})
-let footer1 =   document.querySelector('.footer-container')
-for(let n in nav){
-    nav[n].addEventListener('click',function(){
-
-        linkToogle.classList.toggle('menu-click')
-        container.classList.toggle('container-toogle')  
-
-   
+        let i = document.getElementById('i-menu')
+        if(i.classList.contains('fa-bars')){
+            i.classList.remove('fa-bars')
+            i.classList.add('fa-x')
+        }
+        else if(i.classList.contains('fa-x')){
+            i.classList.remove('fa-x')
+            i.classList.add('fa-bars')
+        } 
+        
+         link.classList.toggle('link-toggle')  
     })
+     
+
  
-}
