@@ -1,7 +1,5 @@
 let portfolio = {
-    // mode :{
-
-    // }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
     competence : {
         titre : 'Skills',
 
@@ -123,33 +121,33 @@ let educationContainer = document.querySelector('.education-container-1')
 let titreEducation = document.querySelector('.titreEducation')
 titreEducation.innerHTML = portfolio.formation.GrandTitre
  
-let h3
-let h4 
-let h5  
-let h6 
+let h2
+let h3 
+let h4  
+let h5 
   
  function educate(){
     let education1 = document.createElement('div')
     education1.classList.add('education1')
     educationContainer.appendChild(education1)
+    education1.appendChild(h2)
     education1.appendChild(h3)
     education1.appendChild(h4)
-    education1.appendChild(h5)
-    education1.appendChild(h6)    
+    education1.appendChild(h5)    
   }
 
 
 for (let i= 0 ;i<portfolio.formation.education.length;i++){
  
-    h3= document.createElement('h2')
-    h4= document.createElement('h4')
-    h5= document.createElement('h5') 
-    h6= document.createElement('h6')
+    h2= document.createElement('h2')
+    h3= document.createElement('h4')
+    h4= document.createElement('h5') 
+    h5= document.createElement('h6')
     educate()
-    h3.innerHTML = portfolio.formation.education[i].logo 
-    h4.innerHTML = portfolio.formation.education[i].annee
-    h5.innerHTML = portfolio.formation.education[i].ecole
-    h6.innerHTML = portfolio.formation.education[i].degré
+    h2.innerHTML = portfolio.formation.education[i].logo 
+    h3.innerHTML = portfolio.formation.education[i].annee
+    h4.innerHTML = portfolio.formation.education[i].ecole
+    h5.innerHTML = portfolio.formation.education[i].degré
 
 }
 
@@ -184,20 +182,32 @@ light.addEventListener('click',function(){
     link.style.backgroundColor='#011936'
 })
 
-menu.addEventListener('click',function(){
+let i = document.getElementById('i-menu')
+function linkFunction(){
+    if(i.classList.contains('fa-bars')){
+        i.classList.remove('fa-bars')
+        i.classList.add('fa-x')
+    }
+    else if(i.classList.contains('fa-x')){
+        i.classList.remove('fa-x')
+        i.classList.add('fa-bars')
+    } 
     
-        let i = document.getElementById('i-menu')
-        if(i.classList.contains('fa-bars')){
-            i.classList.remove('fa-bars')
-            i.classList.add('fa-x')
-        }
-        else if(i.classList.contains('fa-x')){
-            i.classList.remove('fa-x')
-            i.classList.add('fa-bars')
-        } 
-        
-         link.classList.toggle('link-toggle')  
-    })
+     link.classList.toggle('link-toggle')  
+}
+menu.addEventListener('click',function(){
+    linkFunction()
+})
      
+let home = document.getElementById('home-link')
+let about = document.getElementById('about-link')
+let skill = document.getElementById('skill-link')
+let educ = document.getElementById('education-link')
+let contact = document.getElementById('contact-link')
+let nav =[home,about,skill,educ,contact]
 
- 
+nav.forEach(element => {
+   element.addEventListener('click',function(){
+    linkFunction() 
+   })
+});
