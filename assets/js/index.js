@@ -206,8 +206,13 @@ let educ = document.getElementById('education-link')
 let contact = document.getElementById('contact-link')
 let nav =[home,about,skill,educ,contact]
 
-nav.forEach(element => {
-   element.addEventListener('click',function(){
-    linkFunction() 
-   })
-});
+let x = window.matchMedia("(max-width: 930px)")
+if(x.matches){
+    nav.forEach(element => {
+        element.addEventListener('click',function(event){  
+       
+            linkFunction()
+         });
+     
+     })
+}
