@@ -46,22 +46,37 @@ let menu=document.querySelector('.menu')
 let link = document.querySelector('.link')
 
 let container = document.querySelector('.container')
- 
+let iconSkills = document.querySelectorAll('.icon-skills')
 dark.addEventListener('click',()=>{
+    let educationItems = document.querySelectorAll('.education-item');
+    console.log(educationItems);
     dark.style.zIndex='-2'
     light.style.zIndex='2'
     bgVideo.style.visibility='hidden'
     bgImg.style.visibility='visible'
     header.style.backgroundColor='#000'
     link.style.backgroundColor='#000'
+    educationItems.forEach((educationItem)=>{
+        educationItem.style.background='transparent'
+    })
+    iconSkills.forEach((iconSkill)=>{
+        iconSkill.style.background='transparent'
+    })
 })
 light.addEventListener('click',()=>{
+    let educationItems = document.querySelectorAll('.education-item');
     light.style.zIndex='-2'
     dark.style.zIndex='2'
     bgVideo.style.visibility='visible'
     bgImg.style.visibility='hidden'   
     header.style.backgroundColor='#011936'
     link.style.backgroundColor='#011936'
+    educationItems.forEach((educationItem)=>{
+        educationItem.style.background='#011936'
+    })
+    iconSkills.forEach((iconSkill)=>{
+        iconSkill.style.background='#011936'
+    })
 })
 
 let i = document.getElementById('i-menu')
