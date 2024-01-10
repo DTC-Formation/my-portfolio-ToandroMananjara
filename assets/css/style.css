@@ -370,7 +370,11 @@ i:hover{
     color: #141414;
     background: #F6F4F3;
 }
-
+.description{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
 /* bloc education */
 .education{
     width: 100%;
