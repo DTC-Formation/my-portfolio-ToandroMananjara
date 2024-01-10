@@ -1,0 +1,36 @@
+{
+    "titre" : "<i class='fa-solid fa-graduation-cap'></i> Education & Training",
+    "educations" :[
+        {
+            "logo" : "<i class='fa-solid fa-award'></i>",
+            "annee" : "2023",
+            "ecole" : "Digital Training Center",
+            "degre" : "Web Development Training"
+        },
+        {
+            "logo" : "<i class='fa-solid fa-award'></i>",
+            "annee" : "2022-2023",
+            "ecole" : "University of Antananarivo",
+            "degre" : "3rd year of a Bachelor's degree in Mathematics and Computer Science "
+        },
+        {
+            "logo" : "<i class='fa-solid fa-award'></i>",
+            "annee" : "2020-2022",
+            "ecole" : "University of Antananarivo",
+            "degre" : "2nd year of a Bachelor's degree in Mathematics and Computer Science "
+        },
+        {
+            "logo" : "<i class='fa-solid fa-award'></i>",
+            "annee" : "2019-2020",
+            "ecole" : "University of Antananarivo",
+            "degre" : "1st year of a Bachelor's </br> degree  in Mathematics and Computer Science "
+        },
+        {
+            "logo" : "<i class='fa-solid fa-award'></i>",
+            "annee" : "2018",
+            "ecole" : "Nanisana High School",
+            "degre" : "Baccalaureate series C"
+        }
+
+    ]
+}

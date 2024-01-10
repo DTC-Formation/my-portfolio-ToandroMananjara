@@ -15,7 +15,7 @@
 }
 a{
     text-decoration: none;
-    color: #fff;
+    /* color: #fff; */
 }
 html{
     scroll-behavior: smooth;
@@ -25,6 +25,7 @@ body{
     margin: 0;
     color: #F6F4F3;
     position: relative;
+    box-sizing: border-box;
     /* background-image: url(../img/dark-bg.jpg); */
 }
 h1{
@@ -54,6 +55,8 @@ ul{
     width: 50px;
     height: 50px;
 }
+
+
 .light-mode,.dark-mode{
     position: absolute;
     display: flex;
@@ -70,7 +73,6 @@ ul{
     z-index: 2;
     background: #fff;
 }
-
 /*background imge et video*/
 .bg-video,.bg-img img{
         width: 100%;
@@ -122,9 +124,7 @@ header .user{
 /* navbar :acceuil ,a propos,competence, education,contact positionné à droite  */
 .navbar{
     position: absolute;
-    right: 10px;
-    padding: 15px 0; 
-    
+    right: 10px;    
 }
 /* mettre les navbar cote à cote */
 .navbar .link{
@@ -133,11 +133,16 @@ header .user{
     margin: auto;
 }
 .navbar .link span{
-    margin-right: 40px;
     position: relative;
+    margin-right: 40px;
 }
 .navbar .link a{
     padding: 10px; 
+}
+#skill-link{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 .navbar a:hover{
     color: #d9af23;
@@ -284,8 +289,6 @@ i:hover{
 .download{
     margin-top: 40px;
 }
-
-
 /* bloc competence */
 .skills-container {
     width: 100%;
@@ -299,24 +302,75 @@ i:hover{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 15px;
     padding-top: 20px;
 }
 .icon-skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
     text-align: center;
+    background: #011936;
+    border-radius: 20px;
+    border: solid 1px #F6F4F3;
+    box-shadow: 2px 2px 2px #F6F4F3;
+    padding: 5px;
+    margin: 5px 0;
+}
+.techno{
+    display: flex;
+}
+.techno div img{
+    width: 50px;
+    height: 50px;
+}
+.image-project{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.image-project img{
+    width: 90%;
 }
 .icon-skills div{
     margin: 10px;
     font-size: 25px;
 }
 .icon-skills img{
-    width: 200px;
+    /* width: 200px; */
     height: 200px;
-
+    
     border: solid 2px #F6F4F3;
     box-shadow: 4px 2px 5px #F6F4F3;
     border-radius: 20px;
 }
+.project-name{
+    color: #d9af23;
+}
+.link-project {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.link-project span{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    background:#d9af23;
+    color: #141414;
+    border: solid 2px #F6F4F3;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+.link-project span:hover{
+    color: #141414;
+    background: #F6F4F3;
+}
+
 /* bloc education */
 .education{
     width: 100%;
@@ -331,7 +385,7 @@ i:hover{
     align-items: center;
     padding:0 50px;
 }
-.education-container-1{
+.education-container-item{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -340,11 +394,12 @@ i:hover{
 .education h1 i{
     font-size:50px ;
 }
-.education .education1{
+.education .education-item{
     width: 320px;
     height: 320px;
     font-size: 30px;
     text-align: center;
+    background: #011936;
     border: solid 2px #F6F4F3;
     border-radius: 20px;
     box-shadow: 4px 2px 5px #F6F4F3;
@@ -352,11 +407,11 @@ i:hover{
     margin: 20px;
     padding:0 10px;
 }
-.education1:hover{
+.education-item:hover{
     transform: scale(1.05);
 }
 
-.education1 h4{
+.education-item h4{
     color: #d9af23;
 }
 /* section Contact */
