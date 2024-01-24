@@ -2,6 +2,7 @@
     font-family: astonpoliz;
     src: url(../fonts/Astonpoliz/Astonpoliz.otf),url(../fonts/Astonpoliz/Astonpoliz.ttf);
 }
+
 @font-face {
     font-family: inter;
     src: url(../fonts/static/Inter-Regular.ttf);
